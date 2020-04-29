@@ -12,6 +12,6 @@ module.exports = class Ping extends Command{
         })
     }
     async run(message,args){
-        message.channel.send('Pong')
+        message.channel.send(`Pong ${this.client.ws.ping}ms`)
     }
 }
